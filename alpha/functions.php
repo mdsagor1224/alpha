@@ -127,15 +127,15 @@ add_action("widgets_init","alpha_sidebar");
 
 
 
-function alpha_the_excerpt(){
-    if(!post_passsword_required()){
-        return $excerpt;
-    }else{
-        echo get_the_password_form();
-    }
-}
+// function alpha_the_excerpt(){
+//     if(!post_passsword_required()){
+//         return $excerpt;
+//     }else{
+//         echo get_the_password_form();
+//     }
+// }
 
-add_filter("the_excerpt","alpha_the_excerpt");
+// add_filter("the_excerpt","alpha_the_excerpt");
 
 function alpha_protected_title_change(){
     return "%s";
