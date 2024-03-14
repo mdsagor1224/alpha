@@ -1,13 +1,11 @@
-<?php 
-$alpha_feat_image = get_the_post_thumbnail_url(null,"large");
-
-?>
-
-
-<div class="header page-header" style="background-image: url(<?php echo $alpha_feat_image;?>);">
+<div class="header">
     <div class="container">
         <div class="row">
+
             <div class="col-md-12">
+                <div class="header-logo">
+                    <?php the_custom_logo(); ?>
+                </div>
                 <h3 class="tagline">
                     <?php bloginfo('description');?>
                  </h3>
@@ -16,15 +14,8 @@ $alpha_feat_image = get_the_post_thumbnail_url(null,"large");
                 </h1>
             </div>
 
-
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="navigation">
+            <div class="col-md-12">
+                <div class="navigation">
                 <?php
                     wp_nav_menu(
                         array(
@@ -34,6 +25,7 @@ $alpha_feat_image = get_the_post_thumbnail_url(null,"large");
                         )
                     );
 			        ?>
+                </div>
             </div>
         </div>
     </div>

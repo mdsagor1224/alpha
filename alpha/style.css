@@ -73,9 +73,20 @@ h2.post-title {
     background-size: cover;
     margin-bottom: 30px;
     padding: 170px 0;
+    background-repeat: no-repeat;
 }
 
 .page-header h1.heading a{
     color: #222;
     text-decoration: none;
+}
+
+
+.header-logo{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.header-logo img{
+    border-radius: 50px;
 }
